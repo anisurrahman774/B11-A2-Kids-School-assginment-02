@@ -23,9 +23,9 @@
 /* leptop */
 /* header start */
 /* navbar start */
-  .header{
+  /* .header{
     border: 1px solid #24a1d6;
-  }
+  } */
 .nav-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -209,104 +209,143 @@
 
 /* main */
 /* section standard curriculam */
-.standard-curriculam{
-    margin-top: 20px;
-    
-    /* width: 1440px;
-    height: 880px; */
-}
-.standard-curriculam-title{
-    font-size: 3rem;
-    font-weight: bold;
+  .curriculum-container {
     text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    background-image: url('../assets/bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    color: #333;
     
-}
-
-
-.standard-curriculam-bg {
-    position: relative;
-    width: 1440px;
-    height: 880px;
-    border: 2px solid seagreen;
+    
   }
   
-  .standard-curriculam-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1160px;
-    height: 480px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    margin: 140px 200px;
-    gap: 28px;
-    
-    
+  .curriculum-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     
   }
-
-  .standard-curriculam-card{
+  
+  .card {
     width: 367px;
     height: 475px;
     border-radius: 18px;
     box-shadow: 0 4px 3px #05a615;
     margin-top: 30px;
-    
-    
-  }
-  .card-1{
-    background: linear-gradient(180deg,#DEF5FF,#FFFFFF);
-    justify-items: center;
-    border-radius:18px ;
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     
-    
+  }
+
+  .radian-color-1{
+    background: linear-gradient(180deg,#DEF5FF,#FFFFFF);
 
   }
-  .card-2 {
+  .radian-color-2{
     background: linear-gradient(180deg,#FFF4DC,#FFFFFF);
-    justify-items: center;
-    border-radius:18px ;
-    text-align: center;
+
   }
-  .card-3{
+  .radian-color-3{
     background: linear-gradient(180deg,#F2E8FF,#FFFFFF);
-    justify-items: center;
-    border-radius:18px ;
-    text-align: center;
 
   }
   
-  img{
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-icon img {
+    width: 80px;
+    height: 80px;
     margin-top: 50px;
   }
-  .card-1 a{
-    text-decoration: none;
+  
+  .card h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .card .read-more-1 {
+    display: inline-block;
+    font-size: 1rem;
     color: #64C8FF;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .card-2 a{
     text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .card .read-more-2 {
+    display: inline-block;
+    font-size: 1rem;
     color: #F0AA00;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .card-3 a{
     text-decoration: none;
-    color: #8700FF;
-    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
   }
-
-  p{
-    margin: 30px;
-    color: #808080;
+  .card .read-more-3 {
+    display: inline-block;
+    font-size: 1rem;
+    color: #8700FF;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
   }
- 
-
+  
+  .card .read-more:hover {
+    background-color: #2196f3;
+    color: #fff;
+  }
   
 
+
+  
+  .carousel-buttons {
+    margin-top: 50px;
+   
+  }
+  
+  .carousel-buttons button {
+    background-color: orange;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-buttons button:hover {
+    background-color: #2e7d32;
+  }
+  
+  
+
+  
