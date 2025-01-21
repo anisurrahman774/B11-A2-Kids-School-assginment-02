@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbe9e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            width: 350px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-date {
+            background-color: #00c4cc;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .card-content {
+            padding: 16px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 12px;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="assets/story-1.png" alt="Children playing">
+        <div class="card-date">November 19, 2019</div>
+        <div class="card-content">
+            <h2 class="card-title">A fun toddler coloring training on classroom</h2>
+            <p class="card-description">
+                Beautiful branding for changes by Never Now in Australia. Changes is a platform for open discussion in an inclusive and collaborative environment, providing the...
+            </p>
+        </div>
+    </div>
+</body>
+</html>
