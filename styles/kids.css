@@ -681,18 +681,17 @@
   display: flex;
   align-items: center;
   justify-items: center;
-  
-  
 
 }
 .div-footer img{
   height: 80px;
   width: 70px;
   background-color: white;
-  margin-top: 20px;
+
 }
 .footer-h2{
   font-size: 2.5rem;
+  margin-top: 0;
   /* border: 1px solid saddlebrown; */
 }
 
