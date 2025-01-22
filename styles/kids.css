@@ -9,8 +9,43 @@
   }
   /* font style end */
 
+
+
+  .marquee {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #FF0000; /* Red background */
+    color: #FFFFFF; /* White text */
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 9999;
+    padding: 10px 0;
+    border-top: 2px solid #FFD700;
+    text-align: center;
+    bottom: 0;
+  }
+
+
+  @media (max-width: 576px) {
+    .marquee {
+      max-width: 500px;
+      top: 0; 
+      bottom: unset;
+      border-top: none;
+      border-bottom: 2px solid #FFD700; 
+      font-size: 16px; 
+    }
+  }
+
+
+
+
+
+
   
 /* phone */
+
   .manu-item{
     display: flex;
     justify-content: space-between;
@@ -158,10 +193,14 @@
 /* responsive header  */
 
 @media screen and (max-width:576px){
+  .manu{
+    margin-top: 40px;
+  }
+  
     .manu{
         
         border: 0.5px solid orange;
-
+        
     }
     .manu-item{
         display: flex;
@@ -217,7 +256,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 18px;
+    /* border-radius: 18px; */
     color: #333;
     /* border: 1px solid saddlebrown; */
     
@@ -617,12 +656,14 @@
   align-items: center;
   justify-items: center;
   
+  
 
 }
 .div-footer img{
   height: 80px;
   width: 70px;
   background-color: white;
+  margin-top: 20px;
 }
 .footer-h2{
   font-size: 2.5rem;
@@ -684,11 +725,7 @@
     margin: 10px;
     
   }
-  /* .div-footer{
-    display: flex;
-    align-items: center;
   
-  } */
   
   
 }
